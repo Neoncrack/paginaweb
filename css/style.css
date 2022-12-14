@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.bkc{
+    background-color: #102c54;
+}
+
+
+body{
+    font-family:'Roboto', sans-serif;
+}
+
+.hero{
+    background-image: url(../img/fondoin3.jpg);
+    height: 90vh;
+}
+
+.textprincipal{
+    text-align: center;
+} 
+
+.h1-cursos{
+    text-align: center;
+    margin-top: 10px;
+    background-color: rgb(212, 212, 212);
+    padding: 10px;
+    margin-bottom: 3%;
+}
+
+.h1-noticias{
+    text-align: center;
+    text-decoration-line: underline;
+    margin-top: 10px;
+    background-color: rgb(212, 212, 212);
+    padding: 10px;
+    margin-bottom: 3%;
+}
+
+.material{
+    display: grid;
+    grid-template-areas:
+    "apartado1 apartado2"
+    "apartado3 apartado4";
+    grid-template-columns: 50% 50%;
+    gap: 10px;
+    margin: 5px;
+}
+
+
+
+.noticias{
+    display: grid;
+    grid-template-areas:
+    "noticiaseth  noticiastext1"
+    "noticiaselon noticiastext2"
+    "noticiasada  noticiastext3";
+grid-template-columns: 38% 52%;
+font-size: 120%;
+font-weight: bold;
+}
+
+.noticias-eth{
+    margin-bottom: 15%;
+    margin-left: 7%;
+    grid-area: noticiaseth;
+}
+
+.noticias-elon{
+    margin-left: 7%;
+    grid-area: noticiaselon;
+}
+
+.noticias-ada{
+    margin-left: 7%;
+    grid-area: noticiasada;
+    margin-bottom: 10%;
+}
+
+.noticias-text1{
+    margin-bottom: 15%;
+    grid-area: noticiastext1;
+}
+.noticias-text2{
+    margin-bottom: 15%;
+    grid-area: noticiastext2;
+}
+
+.noticias-text3{
+    margin-bottom: 2%;
+    grid-area: noticiastext3;
+}
+
+.miinfo{
+    background-color: #102c54;
+}
+
+.pic{
+    background-color: #102c54;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+.contacto{
+    display: grid;
+    grid-area:
+    "contacto_ch3  form-register"
+    "contacto_ch4  form-register"
+    "relleno       form-register";
+    grid-template-columns: 60% 40%;
+}
+
+.form-register{
+    width: 400px;
+    padding: 30px;
+    background-color: #102c54;
+    margin: auto;
+    border-radius: 4px;
+    color: white;
+}
+
+.contacto_especificacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacto_ch3{
+    width: 300px;
+    background-color: #102c54;
+    margin-top: 70px;
+    text-align: center;
+    color: white;
+}
+.contacto_ch4{
+    margin-top: 10px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.contacto_relleno{
+    text-align: center;
+    width: 400px;
+}
+
+.headubi{
+    margin-top: 37px;
+    background-color: gainsboro;
+}
+.ubicacion{
+    text-align: center;
+    margin-bottom: 10rem;
+}
+
+footer{
+    background-color: rgb(29, 29, 29);
+    grid-area: footer;
+}
+.butfoot{
+    background-color: rgb(29, 29, 29);
+    border-style: none;
+}
+    
+.imgfoot{
+    margin: 10px;
+}
