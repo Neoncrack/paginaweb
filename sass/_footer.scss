@@ -1,0 +1,16 @@
+footer{
+    background-color: rgb(29, 29, 29);
+    grid-area: footer;
+    height: 50vh;
+    margin-top: 10%;
+
+    .butfoot{
+        background-color: rgb(29, 29, 29);
+        border-style: none;
+
+        .imgfoot{
+            margin: 10px;
+        }
+    }
+}
+

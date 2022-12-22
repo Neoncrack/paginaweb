@@ -1,0 +1,17 @@
+.h1-cursos{
+    text-align: center;
+    margin-top: 10px;
+    background-color: rgb(212, 212, 212);
+    padding: 10px;
+    margin-bottom: 3%;
+}
+
+.material{
+    display: grid;
+    grid-template-areas:
+    "apartado1 apartado2"
+    "apartado3 apartado4";
+    grid-template-columns: 50% 50%;
+    gap: 10px;
+    margin: 5px;
+}

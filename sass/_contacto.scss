@@ -1,0 +1,82 @@
+.miinfo{
+    background-color: #102c54;
+}
+
+.pic{
+    background-color: #102c54;
+}
+
+a{
+    text-decoration: none;
+}
+
+.contacto{
+    display: grid;
+    grid-area:
+    "contacto_ch3  form-register"
+    "contacto_ch4  form-register"
+    "relleno       form-register";
+    grid-template-columns: 60% 40%;
+
+    .contacto_especificacion{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .contacto_ch3{
+            width: 300px;
+            background-color: #102c54;
+            margin-top: 70px;
+            text-align: center;
+            font-weight: 800;
+            color: white;
+        }
+    
+        .contacto_ch4{
+            margin-top: 10px;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+        .contacto_relleno{
+            text-align: center;
+            width: 400px;
+        }
+        
+        .headubi{
+            margin-top: 37px;
+            background-color: $secondaryColor;
+            font-weight: 700;
+        }
+
+        .ubicacion{
+            text-align: center;
+            margin-bottom: 10rem;
+        }
+    }
+}
+
+
+.form-register{
+    width: 400px;
+    padding: 30px;
+    background-color: #102c54;
+    margin: auto;
+    border-radius: 4px;
+    color: white;
+
+    .h4regis{
+        font-weight: 700;
+    }
+
+    .contactourl{
+        font-weight: 700;
+    }
+}
+
+
+
+
+
+
+
+

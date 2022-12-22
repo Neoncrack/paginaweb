@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.bkc {
+  background-color: #102c54;
+}
+
+.hero {
+  background-image: url(../img/fotoinicio.jpg);
+  height: 90vh;
+}
+.hero .font1 {
+  font-weight: bold;
+  background-color: #102c54;
+  transition-property: all;
+}
+
+.textprincipal {
+  text-align: center;
+  background-color: rgb(212, 212, 212);
+  height: 60%;
+  font-size: 100%;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 992px) {
+  .hero {
+    background-image: url(../img/fotoinicio.jpg);
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .hero .font1 {
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
+    background-color: #102c54;
+    transition-property: all;
+  }
+  .hero .sabermas {
+    margin-top: 40px;
+    text-align: center;
+    width: 25%;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+  }
+  .hero .sabermasbut {
+    font-weight: bold;
+    background-color: white;
+    padding: 10px;
+    transition-property: all;
+    transition-duration: 2s;
+  }
+  .hero .sabermasbut:hover {
+    background-color: #102c54;
+    color: white;
+  }
+  .textprincipal {
+    background-color: rgb(212, 212, 212);
+    height: 20vh;
+    font-size: 150%;
+    font-weight: 900;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+  }
+}
+.h1-cursos {
+  text-align: center;
+  margin-top: 10px;
+  background-color: rgb(212, 212, 212);
+  padding: 10px;
+  margin-bottom: 3%;
+}
+
+.material {
+  display: grid;
+  grid-template-areas: "apartado1 apartado2" "apartado3 apartado4";
+  grid-template-columns: 50% 50%;
+  gap: 10px;
+  margin: 5px;
+}
+
+.h1-noticias {
+  text-align: center;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  margin-top: 10px;
+  background-color: rgb(212, 212, 212);
+  margin-bottom: 6%;
+}
+
+.noticias {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5%;
+  text-align: center;
+  font-size: 100%;
+  font-weight: bold;
+}
+.noticias .noticias-eth {
+  margin-bottom: 5%;
+  grid-area: noticiaseth;
+}
+.noticias .noticias-elon {
+  margin-bottom: 5%;
+  grid-area: noticiaselon;
+}
+.noticias .noticias-ada {
+  grid-area: noticiasada;
+}
+.noticias .noticias-text1 {
+  margin-bottom: 15%;
+  text-align: center;
+  grid-area: noticiastext1;
+}
+.noticias .noticias-text2 {
+  margin-bottom: 15%;
+  text-align: center;
+  grid-area: noticiastext2;
+}
+.noticias .noticias-text3 {
+  text-align: center;
+  grid-area: noticiastext3;
+}
+
+@media screen and (min-width: 768px) {
+  .h1-noticias {
+    text-align: center;
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+    margin-top: 10px;
+    background-color: rgb(212, 212, 212);
+    padding: 10px;
+    margin-bottom: 3%;
+  }
+  .noticias {
+    display: grid;
+    grid-template-areas: "noticiaseth  noticiaselon" "noticiastext1 noticiastext2" "noticiasada  noticiastext3";
+    grid-template-columns: 48% 48%;
+    gap: 4%;
+    font-size: 120%;
+    font-weight: bold;
+  }
+  .noticias .noticias-eth {
+    margin-left: 7%;
+    grid-area: noticiaseth;
+  }
+  .noticias .noticias-elon {
+    margin-left: 7%;
+    grid-area: noticiaselon;
+  }
+  .noticias .noticias-ada {
+    margin-left: 7%;
+    margin-bottom: 15%;
+    grid-area: noticiasada;
+  }
+  .noticias .noticias-text1 {
+    margin-bottom: 15%;
+    grid-area: noticiastext1;
+  }
+  .noticias .noticias-text2 {
+    margin-bottom: 15%;
+    grid-area: noticiastext2;
+  }
+  .noticias .noticias-text3 {
+    margin-bottom: 15%;
+    grid-area: noticiastext3;
+  }
+}
+@media screen and (min-width: 992px) {
+  .h1-noticias {
+    text-align: center;
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+    margin-top: 10px;
+    background-color: rgb(212, 212, 212);
+    padding: 10px;
+    margin-bottom: 3%;
+  }
+  .noticias {
+    display: grid;
+    grid-template-areas: "noticiaseth  noticiastext1" "noticiaselon noticiastext2" "noticiasada  noticiastext3";
+    grid-template-columns: 38% 52%;
+    font-size: 120%;
+    font-weight: bold;
+  }
+  .noticias-eth {
+    margin-left: 7%;
+    margin-bottom: 10%;
+    grid-area: noticiaseth;
+  }
+  .noticias-elon {
+    margin-left: 7%;
+    margin-bottom: 10%;
+    grid-area: noticiaselon;
+  }
+  .noticias-ada {
+    margin-left: 7%;
+    grid-area: noticiasada;
+  }
+  .noticias-text1 {
+    margin-left: 7%;
+    margin-bottom: 10%;
+    grid-area: noticiastext1;
+  }
+  .noticias-text2 {
+    margin-left: 7%;
+    margin-bottom: 10%;
+    grid-area: noticiastext2;
+  }
+  .noticias-text3 {
+    margin-left: 7%;
+    grid-area: noticiastext3;
+  }
+}
+.miinfo {
+  background-color: #102c54;
+}
+
+.pic {
+  background-color: #102c54;
+}
+
+a {
+  text-decoration: none;
+}
+
+.contacto {
+  display: grid;
+  grid-area: "contacto_ch3  form-register" "contacto_ch4  form-register" "relleno       form-register";
+  grid-template-columns: 60% 40%;
+}
+.contacto .contacto_especificacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contacto .contacto_especificacion .contacto_ch3 {
+  width: 300px;
+  background-color: #102c54;
+  margin-top: 70px;
+  text-align: center;
+  font-weight: 800;
+  color: white;
+}
+.contacto .contacto_especificacion .contacto_ch4 {
+  margin-top: 10px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.contacto .contacto_especificacion .contacto_relleno {
+  text-align: center;
+  width: 400px;
+}
+.contacto .contacto_especificacion .headubi {
+  margin-top: 37px;
+  background-color: rgb(212, 212, 212);
+  font-weight: 700;
+}
+.contacto .contacto_especificacion .ubicacion {
+  text-align: center;
+  margin-bottom: 10rem;
+}
+
+.form-register {
+  width: 400px;
+  padding: 30px;
+  background-color: #102c54;
+  margin: auto;
+  border-radius: 4px;
+  color: white;
+}
+.form-register .h4regis {
+  font-weight: 700;
+}
+.form-register .contactourl {
+  font-weight: 700;
+}
+
+footer {
+  background-color: rgb(29, 29, 29);
+  grid-area: footer;
+  height: 50vh;
+  margin-top: 10%;
+}
+footer .butfoot {
+  background-color: rgb(29, 29, 29);
+  border-style: none;
+}
+footer .butfoot .imgfoot {
+  margin: 10px;
+}/*# sourceMappingURL=style.css.map */
