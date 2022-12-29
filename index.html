@@ -13,33 +13,83 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bkc">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html"><img src="./img/logoonbit.png" alt="logo de empresa"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-link active text-white" aria-current="page" href="./sections/cursos.html">Cursos</a>
-                    <a class="nav-link active text-white" href="./sections/noticias.html">Noticias</a>
-                    <a class="nav-link active text-white" href="./sections/nosotros.html">¿Quienes somos?</a>
-                    <a class="nav-link active text-white" href="./sections/contacto.html" tabindex="-1" aria-disabled="true">Contactanos</a>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bkc">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="./img/logoonbit.png" alt="logo de empresa"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active text-white" aria-current="page"
+                            href="./sections/cursos.html">Cursos</a>
+                        <a class="nav-link active text-white" href="./sections/noticias.html">Noticias</a>
+                        <a class="nav-link active text-white" href="./sections/nosotros.html">¿Quienes somos?</a>
+                        <a class="nav-link active text-white" href="./sections/contacto.html" tabindex="-1"
+                            aria-disabled="true">Contactanos</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero d-flex justify-content-center align-items-center">
+        <h2 class="text-white bg p-2 rounded font1">BIENVENIDO A ONBIT</h2>
+        <p class="sabermas">Aqui encontraras todo lo que necesites saber en relacion al mundo blockchain y finanzas
+            personales, decidimos
+            ayudarte a mejorar la administracion de tu dinero y aprovicionarte con los conocimientos que necesitas para
+            comprender el mundo cripto</p>
+        <a class="sabermasbut" href="./sections/nosotros.html">Ver mas...</a>
+    </section>
+
+    <p class="textprincipal">Tabajaremos con las pricipales herramientas</p>
+
+    <div id="carouselExampleCaptions" class="carousel slide mt-2" data-bs-ride="false">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./img/tradingview.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Visor de Graficos</h5>
+                    <p>Nos ayudara a visualizar el activo que escojamos para analizar</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./img/binance.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Exchange</h5>
+                    <p>Aqui compramos-vendemos nuestros criptoactivos de forma segura</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./img/coinmarketcap.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>+Info sobre Criptoactivos</h5>
+                    <p>Encontraremos toda la informacion sobre Criptomonedas</p>
                 </div>
             </div>
         </div>
-    </nav>
-    
-    <section class="hero d-flex justify-content-center align-items-center">
-        <h2 class="text-white bg-dark p-2 rounded-pill">Bienvenidos a OnBit</h2>
-    </section>
-
-    
-
-    <p class="textprincipal">Aqui encontraras todo lo que necesites saber en relacion al mundo blockchain y finanzas personales, decidimos
-        ayudarte a mejorar la administracion de tu dinero y aprovicionarte con los conocimientos que necesitas para
-        comprender el mundo cripto...</p>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
 
     <footer>
         <button class="butfoot">
@@ -56,8 +106,7 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous">
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
 </body>
 
