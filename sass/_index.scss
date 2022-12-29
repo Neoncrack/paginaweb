@@ -1,27 +1,98 @@
 .hero{
     background-image: url(../img/fotoinicio.jpg);
     height: 90vh;
+    display: flex;
+    flex-direction: column;
 
     .font1{
+        font-family: 'Quicksand', sans-serif;;
         font-weight: bold;
         background-color: $mainColor;
         transition-property: all;
     }
     
+    .sabermas{
+        margin-top: 20px;
+        text-align: center;
+        width: 25%;
+        font-size: 12px;
+        font-weight: 600;
+        color: white;
+    }
+    .sabermasbut{
+        font-weight: bold;
+        background-color: white;
+        padding: 10px;
+        transition-property: all;
+        transition-duration: 2s;
+    }
+
+    .sabermasbut:hover{
+        background-color: $mainColor;
+        color: white;
+    }
 }
 
-
-
 .textprincipal{
-    text-align: center;
     background-color: $secondaryColor;
-    height: 60%;
-    font-size: 100%;
-    font-weight: 500;
+    height: 20vh;
+    font-size: 150%;
+    font-weight: 900;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
 } 
 
-@include tablet{
 
+@include tablet{
+    .hero{
+        background-image: url(../img/fotoinicio.jpg);
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+    
+        .font1{
+            font-family: 'Quicksand', sans-serif;;
+            font-weight: bold;
+            background-color: $mainColor;
+            transition-property: all;
+        }
+        
+        .sabermas{
+            margin-top: 20px;
+            text-align: center;
+            width: 25%;
+            font-size: 12px;
+            font-weight: 600;
+            color: white;
+        }
+        .sabermasbut{
+            font-weight: bold;
+            background-color: white;
+            padding: 10px;
+            transition-property: all;
+            transition-duration: 2s;
+        }
+
+        .sabermasbut:hover{
+            background-color: $mainColor;
+            color: white;
+        }
+    }
+    
+    .textprincipal{
+        background-color: $secondaryColor;
+        height: 20vh;
+        font-size: 150%;
+        font-weight: 900;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+    } 
 }
 
 @include desktop{

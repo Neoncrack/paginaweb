@@ -1,82 +1,106 @@
-.miinfo{
-    background-color: #102c54;
-}
+@include mobile {
+    .contacto-body {
+        background-color: $secondaryColor;
 
-.pic{
-    background-color: #102c54;
-}
+        .contacto {
+            
+            a {
+                text-decoration: none;
+            }
+            .contacto_especificacion {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
 
-a{
-    text-decoration: none;
-}
+                .contacto_ch3 {
+                    width: 300px;
+                    background-color: #102c54;
+                    margin-top: 70px;
+                    text-align: center;
+                    font-weight: 800;
+                    color: white;
+                }
 
-.contacto{
-    display: grid;
-    grid-area:
-    "contacto_ch3  form-register"
-    "contacto_ch4  form-register"
-    "relleno       form-register";
-    grid-template-columns: 60% 40%;
+                .contacto_ch4 {
+                    margin-top: 10px;
+                    margin-bottom: 50px;
+                    text-align: center;
+                    font-weight: 600;
+                }
 
-    .contacto_especificacion{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+                .contacto_relleno {
+                    text-align: center;
+                    width: 400px;
+                }
 
-        .contacto_ch3{
-            width: 300px;
-            background-color: #102c54;
-            margin-top: 70px;
-            text-align: center;
-            font-weight: 800;
-            color: white;
+                .headubi {
+                    margin-top: 37px;
+                    background-color: white;
+                    font-weight: 700;
+                }
+
+                .ubicacion {
+                    font-weight: 600;
+                    text-align: center;
+                    margin-bottom: 4rem;
+                }
+            }
         }
-    
-        .contacto_ch4{
-            margin-top: 10px;
-            margin-bottom: 50px;
-            text-align: center;
-        }
-        .contacto_relleno{
-            text-align: center;
+
+        .form-register {
             width: 400px;
-        }
-        
-        .headubi{
-            margin-top: 37px;
-            background-color: $secondaryColor;
-            font-weight: 700;
-        }
+            padding: 30px;
+            background-color: #102c54;
+            margin: auto;
+            border-radius: 4px;
+            color: white;
 
-        .ubicacion{
-            text-align: center;
-            margin-bottom: 10rem;
+            .h4regis {
+                font-weight: 700;
+            }
+
+            .contactourl {
+                font-weight: 700;
+            }
         }
     }
 }
 
 
-.form-register{
-    width: 400px;
-    padding: 30px;
-    background-color: #102c54;
-    margin: auto;
-    border-radius: 4px;
-    color: white;
+@include tablet {
+    .contacto-body {
+        background-color: white;
 
-    .h4regis{
-        font-weight: 700;
-    }
+        .contacto {
+            border-style: solid;
+            border-color: $secondaryColor;
+            margin: 20px;
+            padding-bottom: 40px;
 
-    .contactourl{
-        font-weight: 700;
+            .contacto_especificacion {
+
+                .headubi {
+                    background-color: $secondaryColor;
+                }
+            }
+        }
     }
 }
 
 
-
-
-
+@include desktop {
+.contacto-body{
+    .contacto {
+        display: grid;
+        grid-area:
+            "contacto_ch3  form-register"
+            "contacto_ch4  form-register"
+            "relleno       form-register";
+        grid-template-columns: 60% 40%;
+        border-style: none;
+        }
+    }
+}
 
 
 
