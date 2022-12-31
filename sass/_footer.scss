@@ -1,16 +1,93 @@
-footer{
-    background-color: rgb(29, 29, 29);
+footer {
     grid-area: footer;
     margin-top: 10vh;
-    height: 20vh;
 
-    .butfoot{
+    .foot-inicio{
+        background-color: rgb(46, 46, 46);
+        height: 40vh;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        gap: 9%;
+        .block-1{
+            h4{
+                font-weight: bold;
+                font-size: 120%;
+                color: white;
+                border-radius: 5px;
+                width: 80%;
+                text-align: center;
+                background-color: $mainColor;
+            }
+            h5{
+                font-size: 98%;
+                margin-top: 9%;
+                font-weight: 600;
+                text-align: center;
+            }
+            p{
+                font-size: 90%;
+                text-align: center;
+            }
+            margin: 2%;
+            display: flex;
+            flex-direction: column;
+            align-items: initial;
+            width: 25vh;
+
+        }
+        .block-2{
+            h5{
+                margin-top: 3%;
+                font-size: 98%;
+                font-weight: 600;
+            }
+
+            p{
+                font-size: 90%;
+            }
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 25vh;
+            text-align: center;
+        }
+
+        .block-3{
+            h5{
+                font-size: 98%;
+                font-weight: 600;
+            }
+
+            p{
+                font-size: 90%;
+            }
+            margin-top: 3%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 25vh;
+            text-align: center;
+        }
+    }
+    .foot-final {
+        height:6vh;
         background-color: rgb(29, 29, 29);
-        border-style: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: end;
+        gap: 1%;
+        .butfoot {
+            border-style: none;
 
-        .imgfoot{
-            margin: 10px;
+
+            .imgfoot {
+                background-color: rgb(29, 29, 29);
+                border: none;
+            }
         }
     }
 }
+
 

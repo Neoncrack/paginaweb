@@ -428,24 +428,97 @@
   .nosotros-body {
     display: flex;
     flex-direction: column;
+    background-color: rgb(212, 212, 212);
   }
   .nosotros-body .container-onaca {
-    margin-top: 4%;
-    background-color: rgb(212, 212, 212);
-    width: 25%;
-    color: #102c54;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    border-radius: 2px;
   }
-  .nosotros-body .container-onaca h2 {
-    font-weight: 700;
+  .nosotros-body .container-onaca .onaca {
+    margin-top: 4%;
+    background-color: #102c54;
+    width: 25%;
+    padding: 1%;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+    border: solid #102c54;
   }
-  .nosotros-body .container-onaca h3 {
-    text-align: right;
-    font-weight: 700;
+  .nosotros-body .miinfo {
+    margin-right: 1%;
   }
-  .miinfo .pic-container {
+  .nosotros-body .miinfo .us-sec {
+    text-align: center;
     margin-left: 1%;
+    border: solid #102c54;
+    border-radius: 8px;
+    margin-top: 7%;
+    padding-top: 2%;
+    background-color: white;
+  }
+  .nosotros-body .miinfo .us-sec h4 {
+    font-weight: 600;
+  }
+  .nosotros-body .miinfo .business-sec {
+    text-align: center;
+    margin-left: 1%;
+    border: solid #102c54;
+    border-radius: 8px;
+    margin-top: 6%;
+    background-color: white;
+    padding-top: 2%;
+  }
+  .nosotros-body .miinfo .business-sec h4 {
+    font-weight: 600;
+  }
+  .nosotros-body .miinfo .story-sec {
+    text-align: center;
+    margin-left: 1%;
+    border: solid #102c54;
+    border-radius: 8px;
+    margin-top: 6%;
+    padding-top: 2%;
+    background-color: white;
+  }
+  .nosotros-body .miinfo .story-sec h4 {
+    font-weight: 600;
+  }
+}
+@media screen and (min-width: 768px) {
+  .nosotros-body {
+    background-color: white;
+  }
+  .nosotros-body .container-onaca .onaca {
+    background-color: #102c54;
+    color: white;
+    border: solid rgb(212, 212, 212);
+  }
+  .nosotros-body .miinfo .us-sec {
+    border: solid rgb(212, 212, 212);
+    background-color: rgb(212, 212, 212);
+  }
+  .nosotros-body .miinfo .business-sec {
+    border: solid rgb(212, 212, 212);
+    background-color: rgb(212, 212, 212);
+  }
+  .nosotros-body .miinfo .story-sec {
+    border: solid rgb(212, 212, 212);
+    background-color: rgb(212, 212, 212);
+  }
+}
+@media screen and (min-width: 992px) {
+  .nosotros-body .container-onaca {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .nosotros-body .container-onaca .onaca {
+    background-color: rgb(212, 212, 212);
+    text-align: center;
+    color: #102c54;
+    border: solid #102c54;
   }
 }
 @media screen and (min-width: 596px) {
@@ -526,15 +599,86 @@
   }
 }
 footer {
-  background-color: rgb(29, 29, 29);
   grid-area: footer;
   margin-top: 10vh;
-  height: 20vh;
 }
-footer .butfoot {
+footer .foot-inicio {
+  background-color: rgb(46, 46, 46);
+  height: 40vh;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  gap: 9%;
+}
+footer .foot-inicio .block-1 {
+  margin: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: initial;
+  width: 25vh;
+}
+footer .foot-inicio .block-1 h4 {
+  font-weight: bold;
+  font-size: 120%;
+  color: white;
+  border-radius: 5px;
+  width: 80%;
+  text-align: center;
+  background-color: #102c54;
+}
+footer .foot-inicio .block-1 h5 {
+  font-size: 98%;
+  margin-top: 9%;
+  font-weight: 600;
+  text-align: center;
+}
+footer .foot-inicio .block-1 p {
+  font-size: 90%;
+  text-align: center;
+}
+footer .foot-inicio .block-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 25vh;
+  text-align: center;
+}
+footer .foot-inicio .block-2 h5 {
+  margin-top: 3%;
+  font-size: 98%;
+  font-weight: 600;
+}
+footer .foot-inicio .block-2 p {
+  font-size: 90%;
+}
+footer .foot-inicio .block-3 {
+  margin-top: 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 25vh;
+  text-align: center;
+}
+footer .foot-inicio .block-3 h5 {
+  font-size: 98%;
+  font-weight: 600;
+}
+footer .foot-inicio .block-3 p {
+  font-size: 90%;
+}
+footer .foot-final {
+  height: 6vh;
   background-color: rgb(29, 29, 29);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  gap: 1%;
+}
+footer .foot-final .butfoot {
   border-style: none;
 }
-footer .butfoot .imgfoot {
-  margin: 10px;
+footer .foot-final .butfoot .imgfoot {
+  background-color: rgb(29, 29, 29);
+  border: none;
 }/*# sourceMappingURL=style.css.map */

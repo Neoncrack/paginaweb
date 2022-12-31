@@ -1,37 +1,124 @@
-@include mobile {
 
+@include mobile{
     .nosotros-body {
         display: flex;
         flex-direction: column;
+        background-color: $secondaryColor;
 
         .container-onaca {
-            margin-top: 4%;
-            background-color: $secondaryColor;
-            width: 25%;
-            color: $mainColor;
+            display: flex;
+            flex-direction: column;
             align-items: center;
-            border-radius: 2px;
 
-
-            h2 {
-                font-weight: 700;
-            }
-
-            h3 {
-                text-align: right;
-                font-weight: 700;
+            .onaca {
+                margin-top: 4%;
+                background-color: $mainColor;
+                width: 25%;
+                padding: 1%;
+                text-align: center;
+                color: white;
+                font-weight: bold;
+                border-radius: 6px;
+                border: solid $mainColor;
             }
         }
-    }
+        .miinfo {
+            margin-right: 1%;
 
-    .miinfo {
+            .us-sec {
+                text-align: center;
+                margin-left: 1%;
+                border: solid $mainColor;
+                border-radius: 8px;
+                margin-top: 7%;
+                padding-top: 2%;
+                background-color: white;
 
-        .pic-container {
-            margin-left: 1%;
+                h4 {
+                    font-weight: 600;
+                }
+            }
+
+            .business-sec {
+                text-align: center;
+                margin-left: 1%;
+                border: solid $mainColor;
+                border-radius: 8px;
+                margin-top: 6%;
+                background-color: white;
+                padding-top: 2%;
+
+                h4 {
+                    font-weight: 600;
+                }
+            }
+
+            .story-sec {
+                text-align: center;
+                margin-left: 1%;
+                border: solid $mainColor;
+                border-radius: 8px;
+                margin-top: 6%;
+                padding-top: 2%;
+                background-color: white;
+
+                h4 {
+                    font-weight: 600;
+                }
+            }
         }
     }
 }
 
+
+
 @include tablet{
-    
+    .nosotros-body {
+        background-color: white;
+
+        .container-onaca {
+
+            .onaca {
+                background-color: $mainColor;
+                color: white;
+                border: solid $secondaryColor;
+            }
+        }
+
+        .miinfo {
+            .us-sec {
+                border: solid $secondaryColor;
+                background-color: $secondaryColor;
+            }
+
+            .business-sec {
+                border: solid $secondaryColor;
+                background-color: $secondaryColor;
+            }
+
+            .story-sec {
+                border: solid $secondaryColor;
+                background-color: $secondaryColor;
+            }
+        }
+    }
+}
+
+
+@include desktop {
+
+    .nosotros-body {
+        .container-onaca {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .onaca {
+                background-color: $secondaryColor;
+                text-align: center;
+                color: $mainColor;
+                border: solid $mainColor;
+            }
+        }
+    }
 }
